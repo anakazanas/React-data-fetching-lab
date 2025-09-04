@@ -4,6 +4,16 @@ Let's build a react giphy app!
 
 Here is a [working version of the Giphy App](https://pl515.csb.app/)
 
+
+## Setup
+
+```npm create vite@latest react-api-lab -- --template react-ts```
+
+change into the directory with `cd react-api-lab` and then run `npm install` and then `npm install axios`
+
+then you can run our regular `docker-compose up --build` to start and stop the server. 
+
+
 #### Your task is:
 
 - Go to the Giphy docs [HERE](https://developers.giphy.com/docs/), _read_ them
