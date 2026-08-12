@@ -1,42 +1,64 @@
-![giphy-fun](https://i.imgur.com/wAgoirm.png)
+# React Giphy Lab
 
-Let's build a react giphy app!
+#### About
 
-Here is a [working version of the Giphy App](https://pl515.csb.app/)
+Let's build a React Giphy app. Here is a [working version of the Giphy App](https://pl515.csb.app/) to give you a sense of what you're building toward.
 
+#### Setup
 
-## Setup
+Open your terminal application and navigate to your `~/code/ga/labs` directory:
 
-```npm create vite@latest react-api-lab -- --template react-ts```
+```bash
+cd ~/code/ga/labs
+```
 
-change into the directory with `cd react-api-lab` and then run `npm install` and then `npm install axios`
+Clone the `react-api-lab` repo and `cd` into it:
 
-then you can run our regular `docker-compose up --build` to start and stop the server. 
+```bash
+git clone <repo-url> react-api-lab
+cd react-api-lab
+```
 
+Create a new Vite project inside the cloned repo:
 
-#### Your task is:
+```bash
+npm create vite@latest . -- --template react-ts
+```
 
-- Go to the Giphy docs [HERE](https://developers.giphy.com/docs/), _read_ them
-- Create an account and get your Free API key.
+If prompted about the directory not being empty, choose to keep your existing files.
 
-- Diagram your App:
-  - What components will you have?
-  - Where would state "live"?
-  - Where would you setup `useEffect`?
-  - Where do you need to pass props?
-  - Where do you need to make the API call?
+Install the necessary dependencies:
 
-#### 🚀 Completion looks like:
+```bash
+npm install
+npm install axios
+```
 
-- Minimum of 3 components.
-- A single gif should rendered when the page initially loads (ComponentDidMount)
-- On Button click make another API call update state with the new Gif
-- Render only a single gif at a time
+Start the dev server:
 
-#### Bonus - Add A Form
+```bash
+npm run dev
+```
 
-- Add a Form that allows the user to type in a search query for specific Giphy's
+#### Your Task
 
-#### Bonus - Favorite A Giphy
+Go to the [Giphy docs](https://developers.giphy.com/docs/) and read them.
 
-- Allow the user to favorite a Giphy and toggle between the Random Giphy and their Favorite List
+Create an account and get your free API key.
+
+Diagram your app before you start coding. What components will you have? Where would state live? Where would you set up `useEffect`? Where do you need to pass props? Where do you need to make the API call?
+
+#### Completion Looks Like
+
+- A minimum of three components.
+- A single gif renders when the page initially loads (this is your `ComponentDidMount` equivalent).
+- Clicking a button makes another API call and updates state with the new gif.
+- Only a single gif renders at a time.
+
+#### Bonus: Add a Form
+
+Add a form that allows the user to type in a search query for specific gifs.
+
+#### Bonus: Favorite a Gif
+
+Allow the user to favorite a gif and toggle between the random gif view and their favorites list.
