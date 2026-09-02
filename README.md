@@ -12,14 +12,10 @@ Open your terminal application and navigate to your `~/code/ga/labs` directory:
 cd ~/code/ga/labs
 ```
 
-Clone the `react-api-lab` repo and `cd` into it:
+Create a new folder and `cd` into it.
 
-```bash
-git clone <repo-url> react-api-lab
-cd react-api-lab
-```
 
-Create a new Vite project inside the cloned repo:
+Create a new Vite project inside the folder:
 
 ```bash
 npm create vite@latest . -- --template react-ts
